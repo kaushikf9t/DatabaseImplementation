@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="database_implementation_3_0"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="database_implementation_3_0_test">
+				<Option output="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/database_implementation_3_0_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/kaushik/Downloads/database_implementation_3.0/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 database_implementation_3_0_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="database_implementation_3_0_test/fast">
+				<Option output="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/database_implementation_3_0_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/kaushik/Downloads/database_implementation_3.0/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 database_implementation_3_0_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="database_implementation_3_0">
+				<Option output="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/database_implementation_3_0" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/kaushik/Downloads/database_implementation_3.0/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 database_implementation_3_0"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="database_implementation_3_0/fast">
+				<Option output="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/database_implementation_3_0" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/kaushik/Downloads/database_implementation_3.0/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 database_implementation_3_0/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/BigQ.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/BigQ.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/BigQTests.cc">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Comparison.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Comparison.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/ComparisonEngine.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/ComparisonEngine.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/DBFile.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/DBFile.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/DBFileMetaData.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/DBFileMetaData.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Defs.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/File.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/File.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Function.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Function.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/GenericDBFile.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/GenericDBFile.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/HeapFile.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/HeapFile.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/HeapFileGTests.cc">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/ParseFunc.h">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/ParseTree.h">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Pipe.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Pipe.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Record.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Record.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/RelOp.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/RelOp.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Schema.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/Schema.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/SortedFile.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/SortedFile.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/TwoWayList.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/TwoWayList.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/a1-test.cc">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/a1-test.h">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/a2-test.cc">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/a2-test.h">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/a2_2-test.cc">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/a2_2-test.h">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/lex.yy.c">
+			<Option target="database_implementation_3_0_test"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/lex.yyfunc.c">
+			<Option target="database_implementation_3_0_test"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/main.cc">
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/test.cc">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/test.h">
+			<Option target="database_implementation_3_0_test"/>
+			<Option target="database_implementation_3_0"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/y.tab.o">
+			<Option target="database_implementation_3_0_test"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/yyfunc.tab.o">
+			<Option target="database_implementation_3_0_test"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/catalog">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/kaushik/Downloads/database_implementation_3.0/test.cat">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

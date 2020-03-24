@@ -1,0 +1,4 @@
+/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/CMakeFiles/database_implementation_3_0_test.dir
+/home/kaushik/Downloads/database_implementation_3.0/cmake-build-debug/CMakeFiles/database_implementation_3_0.dir

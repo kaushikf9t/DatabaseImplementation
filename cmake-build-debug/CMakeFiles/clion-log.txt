@@ -1,0 +1,16 @@
+/snap/clion/107/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kaushik/Downloads/database_implementation_3.0
+-- Configuring done
+CMake Error at CMakeLists.txt:12 (add_executable):
+  Cannot find source file:
+
+    y.tab.o
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:12 (add_executable):
+  No SOURCES given to target: database_implementation_3_0_test
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
