@@ -1,2 +1,0 @@
-# DatabaseImplementation
-Database Systems Implementation
