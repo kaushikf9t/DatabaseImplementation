@@ -1,13 +1,8 @@
 #include "SortedFile.h"
 
-SortedFile::SortedFile() {
-    in = new Pipe(100);
-    out = new Pipe(100);
-}
+SortedFile::SortedFile() = default;
 
-SortedFile::~SortedFile() {
-
-}
+SortedFile::~SortedFile() = default;
 
 int SortedFile::createMetaData(const char *fpath, fType file_type, void *startup) {
     cout << "In the Sorted File method of create meta data" << endl;
@@ -73,6 +68,8 @@ int SortedFile::Open(const char *f_path, const char *metadataPath) {
 void SortedFile::initBigQ() {
 
     OrderMaker *myorder = metadata->getOrderMaker();
+    in = new Pipe(100);
+    out = new Pipe(100);
     bigQ = new BigQ(*in, *out, *myorder, metadata->getRunLength());
     isBigQCreated = true;
 
@@ -89,7 +86,7 @@ void SortedFile::Add(Record &addme) {
 
 //This merges the in-pipe records when the write operation is preempted by some reads
 void SortedFile::flushPage() {
-    //Shut down the input pipe 
+    //Shut down the input pipe
     in->ShutDown();
     //Get the records from the output file
     Record *outPipeTempRecord = new Record();

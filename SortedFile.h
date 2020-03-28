@@ -21,14 +21,13 @@ class SortedFile: public GenericDBFile{
     Pipe *in, *out;
     bool isBigQCreated;
 
-    int createMetaData(const char *fpath, fType file_type, void *startup);
-    int Create(const char *fpath, const char *metDataPath, fType file_type, void *startup);
-    //int Open(const char *fpath, const char *metadataPath);
-    void Add(Record &addme);
-    int Open(const char *fpath, const char *metadataPath);
+    int createMetaData(const char *fpath, fType file_type, void *startup) override;
+    int Create(const char *fpath, const char *metDataPath, fType file_type, void *startup)override;
+    void Add(Record &addme) override;
+    int Open(const char *fpath, const char *metadataPath)override;
     void initBigQ();
-    void MoveFirst();
-    int GetNext(Record &fetchme);
-    int GetNext(Record &fetchme, CNF &cnf, Record &literal);
-    void flushPage();
+    void MoveFirst()override;
+    int GetNext(Record &fetchme)override;
+    int GetNext(Record &fetchme, CNF &cnf, Record &literal)override;
+    void flushPage()override;
 };

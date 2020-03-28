@@ -1,4 +1,7 @@
 #include "RelOp.h"
+#include "BigQ.h"
+#include <sstream>
+
 /**
  * Select File Operation
  * @param data
@@ -219,31 +222,28 @@ void *WriteOut::executeOp(void *data) {
 
 void *DuplicateRemoval::executeOp(void *data) {
     InternalData *internalData = (InternalData *) data;
-    OrderMaker *o = new OrderMaker(internalData->mySchema);
+    OrderMaker o(internalData->mySchema);
     ComparisonEngine *comp = new ComparisonEngine();
 
     Pipe sortedPipe(100);
-    BigQ bigQ(*internalData->inPipe, sortedPipe, *o, internalData->runLen);
+    BigQ bigQ(*internalData->inPipe, sortedPipe, o, 5);
 
     Record *firstRec = new Record();
     Record *nextRec = new Record();
-    if(sortedPipe.Remove(firstRec) == 0){
-        internalData->outPipe->ShutDown();
-        return nullptr;
-    }
 
-    internalData->outPipe->Insert(firstRec);
-    while(sortedPipe.Remove(nextRec)){
-        if(comp->Compare(firstRec, nextRec, o) == 0){
-            firstRec->Consume(nextRec);
-            continue;
-        } else {
-            internalData->outPipe->Insert(nextRec);
-            firstRec->Consume(nextRec);
+    if (sortedPipe.Remove(firstRec)) {
+        while (sortedPipe.Remove(nextRec)) {
+            if (comp->Compare(firstRec, nextRec, &o) == 0) {
+                firstRec->Consume(nextRec);
+
+            } else{
+                internalData->outPipe->Insert(firstRec);
+                firstRec->Consume(nextRec);
+            }
         }
+        internalData->outPipe->Insert(firstRec);
     }
     internalData->outPipe->ShutDown();
-
     return nullptr;
 }
 

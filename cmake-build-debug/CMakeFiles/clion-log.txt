@@ -3,7 +3,7 @@
 CMake Error at CMakeLists.txt:12 (add_executable):
   Cannot find source file:
 
-    y.tab.o
+    yyfunc.tab.o
 
   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
   .hpp .hxx .in .txx

@@ -46,7 +46,7 @@ protected:
     /**
      * Current page where we will append the records
      */
-    off_t writePage;
+    off_t writePage = 0;
 
     /**
      * Current page from which we will read the data.
@@ -85,25 +85,25 @@ public:
 
     GenericDBFile();
 
-    ~GenericDBFile();
+    virtual ~GenericDBFile();
 
-    virtual int createMetaData(const char *fpath, fType file_type, void *startup);
+    virtual int createMetaData(const char *fpath, fType file_type, void *startup) = 0;
 
-    virtual int Create(const char *fpath, const char *metDataPath, fType file_type, void *startup);
+    virtual int Create(const char *fpath, const char *metDataPath, fType file_type, void *startup) = 0;
 
-    virtual int Open(const char *fpath, const char *metadataPath);
+    virtual int Open(const char *fpath, const char *metadataPath) = 0;
 
     int Close();
 
     void Load(Schema &myschema, const char *loadpath);
 
-    virtual void MoveFirst();
+    virtual void MoveFirst() = 0;
 
-    virtual void Add(Record &addme);
+    virtual void Add(Record &addme) = 0;
 
-    virtual int GetNext(Record &fetchme);
+    virtual int GetNext(Record &fetchme) = 0;
 
-    virtual int GetNext(Record &fetchme, CNF &cnf, Record &literal);
+    virtual int GetNext(Record &fetchme, CNF &cnf, Record &literal) = 0;
 
     /**
      * Flush the page if it have some records while switching from writes to read.
@@ -114,7 +114,7 @@ public:
      * Flush the page into the file.
      * The page won't have any records after it.
      */
-    virtual void flushPage();
+    virtual void flushPage() = 0;
 
 };
 

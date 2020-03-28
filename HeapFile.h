@@ -16,13 +16,20 @@ class HeapFile: public GenericDBFile{
     HeapFile();
     ~HeapFile();
 
-    int createMetaData(const char *fpath, fType file_type, void *startup);
-    int Create(const char *fpath, const char *metDataPath, fType file_type, void *startup);
-    int Open(const char *fpath, const char *metadataPath);
-    void Add (Record &addme);
-    void MoveFirst();
-    int GetNext(Record &fetchme);
-    int GetNext(Record &fetchme, CNF &cnf, Record &literal);
-    void flushPage();
+    int createMetaData(const char *fpath, fType file_type, void *startup) override;
+
+    int Create(const char *fpath, const char *metDataPath, fType file_type, void *startup) override;
+
+    int Open(const char *fpath, const char *metadataPath) override;
+
+    void Add (Record &addme) override;
+
+    void MoveFirst() override;
+
+    int GetNext(Record &fetchme) override;
+
+    int GetNext(Record &fetchme, CNF &cnf, Record &literal) override;
+
+    void flushPage() override;
     
 };

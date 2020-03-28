@@ -1,16 +1,12 @@
 #include "HeapFile.h"
 
-HeapFile::HeapFile() {
+HeapFile::HeapFile() = default;
 
-}
-
-HeapFile::~HeapFile() {
-
-}
+HeapFile::~HeapFile() = default;
 
 int HeapFile::createMetaData(const char *fpath, fType file_type, void *startup) {
     cout << "In the Heap File method of create meta data" << endl;
-
+    outfile = new ofstream();
     outfile->open(fpath, ios::out);
 
     if (!outfile) {
@@ -52,8 +48,7 @@ void HeapFile::Add(Record &rec) {
 void HeapFile::MoveFirst() {
     this->flushPageIfNeeded();
     readPage = 0;
-    //page->EmptyItOut();
-    file->GetPage(page, readPage++);
+    page->EmptyItOut();
 
 }
 
@@ -61,7 +56,8 @@ int HeapFile::GetNext(Record &fetchme) {
     this->flushPageIfNeeded();
 
     if (page->GetFirst(&fetchme) == 1) return 1;
-    if (readPage < writePage) {
+
+    if (readPage < file->GetLength() -1) {
         file->GetPage(page, readPage++);
     }
 
@@ -69,21 +65,19 @@ int HeapFile::GetNext(Record &fetchme) {
 }
 
 void HeapFile::flushPage() {
-    cout<<"In super-class method of flushPage"<<endl;
     file->AddPage(page, writePage++);
     page->EmptyItOut();
     needFlush = false;
 }
 
 int HeapFile::GetNext(Record &fetchme, CNF &cnf, Record &literal) {
-
     this->flushPageIfNeeded();
-
     int foundFilteredValue = 0;
-
+    int count = 0;
     while ((foundFilteredValue = page->GetFirst(&fetchme)) == 1 || readPage < writePage) {
         if (foundFilteredValue == 1) {
             if (comp.Compare(&fetchme, &literal, &cnf)) {
+                cout<<++count;
                 return 1;
             }
         } else {
